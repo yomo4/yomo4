@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "SoundCloud Dark Theme",
+  "version": "1.0",
+  "description": "Красивая темная тема для SoundCloud",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["*://*.soundcloud.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.soundcloud.com/*"],
+      "css": ["styles/dark-theme.css"],
+      "js": ["scripts/content.js"]
+    }
+  ]
+} 

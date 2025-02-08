@@ -1,0 +1,368 @@
+/* Основные переменные темы */
+:root {
+    --sc-dark-background: #121212;
+    --sc-dark-surface: #282828;
+    --sc-dark-surface-light: #383838;
+    --sc-dark-text: #ffffff;
+    --sc-dark-text-secondary: #b3b3b3;
+    --sc-dark-primary: #ff5500;
+    --sc-dark-primary-hover: #ff7733;
+    --sc-dark-border: #404040;
+    --sc-dark-shadow: rgba(0, 0, 0, 0.3);
+    --sc-dark-overlay: rgba(0, 0, 0, 0.6);
+}
+
+/* Основной фон и текст */
+.sc-dark-mode {
+    background-color: var(--sc-dark-background);
+    color: var(--sc-dark-text);
+}
+
+.sc-dark-mode body,
+.sc-dark-mode .g-dark,
+.sc-dark-mode .l-main,
+.sc-dark-mode .l-content {
+    background-color: var(--sc-dark-background);
+    color: var(--sc-dark-text);
+}
+
+/* Навигация и шапка */
+.sc-dark-mode .header,
+.sc-dark-mode .header__inner,
+.sc-dark-mode .header__userNavigation,
+.sc-dark-mode .header__navMenu {
+    background-color: var(--sc-dark-surface);
+    border-color: var(--sc-dark-border);
+    box-shadow: 0 2px 4px var(--sc-dark-shadow);
+}
+
+/* Поиск и формы */
+.sc-dark-mode .headerSearch,
+.sc-dark-mode .headerSearch__input,
+.sc-dark-mode .commentForm__input,
+.sc-dark-mode .textfield {
+    background-color: var(--sc-dark-surface-light);
+    border: 1px solid var(--sc-dark-border);
+    color: var(--sc-dark-text);
+}
+
+.sc-dark-mode .headerSearch__input::placeholder,
+.sc-dark-mode .commentForm__input::placeholder {
+    color: var(--sc-dark-text-secondary) !important;
+}
+
+/* Плеер и элементы управления */
+.sc-dark-mode .playControls,
+.sc-dark-mode .playControls__inner,
+.sc-dark-mode .playControls__bg,
+.sc-dark-mode .playbackSoundBadge {
+    background-color: var(--sc-dark-surface);
+    border-top: 1px solid var(--sc-dark-border);
+}
+
+.sc-dark-mode .playControls__timeline,
+.sc-dark-mode .waveform__layer {
+    background-color: var(--sc-dark-surface-light) !important;
+}
+
+.sc-dark-mode .playbackTimeline__progressWrapper,
+.sc-dark-mode .waveform__layer--active {
+    background-color: var(--sc-dark-primary) !important;
+}
+
+.sc-dark-mode .volume__sliderWrapper {
+    background-color: var(--sc-dark-surface) !important;
+    border: 1px solid var(--sc-dark-border) !important;
+}
+
+/* Карточки и контент */
+.sc-dark-mode .sound__content,
+.sc-dark-mode .soundBadge__content,
+.sc-dark-mode .track,
+.sc-dark-mode .playlist {
+    background-color: var(--sc-dark-surface);
+    border-color: var(--sc-dark-border);
+    box-shadow: 0 2px 4px var(--sc-dark-shadow);
+}
+
+/* Текст и ссылки */
+.sc-dark-mode .soundTitle__username,
+.sc-dark-mode .soundTitle__title,
+.sc-dark-mode .soundTitle__usernameText,
+.sc-dark-mode .trackItem__trackTitle {
+    color: var(--sc-dark-text) !important;
+}
+
+.sc-dark-mode .trackItem__additional {
+    color: var(--sc-dark-text-secondary) !important;
+}
+
+.sc-dark-mode a {
+    color: var(--sc-dark-text);
+    transition: color 0.2s ease;
+}
+
+.sc-dark-mode a:hover {
+    color: var(--sc-dark-primary);
+}
+
+/* Кнопки и интерактивные элементы */
+.sc-dark-mode .sc-button,
+.sc-dark-mode .button {
+    background-color: var(--sc-dark-surface);
+    border: 1px solid var(--sc-dark-border);
+    color: var(--sc-dark-text);
+    transition: all 0.2s ease;
+}
+
+.sc-dark-mode .sc-button:hover,
+.sc-dark-mode .button:hover {
+    background-color: var(--sc-dark-primary);
+    border-color: var(--sc-dark-primary);
+}
+
+.sc-dark-mode .sc-button-primary {
+    background-color: var(--sc-dark-primary) !important;
+    border-color: var(--sc-dark-primary) !important;
+}
+
+.sc-dark-mode .sc-button-primary:hover {
+    background-color: var(--sc-dark-primary-hover) !important;
+    border-color: var(--sc-dark-primary-hover) !important;
+}
+
+/* Боковая панель и виджеты */
+.sc-dark-mode .l-sidebar,
+.sc-dark-mode .sidebar__module {
+    background-color: var(--sc-dark-surface) !important;
+    border-color: var(--sc-dark-border) !important;
+}
+
+/* Модальные окна и оверлеи */
+.sc-dark-mode .modal,
+.sc-dark-mode .modal__modal,
+.sc-dark-mode .dialog {
+    background-color: var(--sc-dark-surface) !important;
+    border: 1px solid var(--sc-dark-border) !important;
+    box-shadow: 0 4px 12px var(--sc-dark-shadow) !important;
+}
+
+.sc-dark-mode .overlay {
+    background-color: var(--sc-dark-overlay) !important;
+}
+
+/* Статистика и метаданные */
+.sc-dark-mode .sc-ministats,
+.sc-dark-mode .sc-stats-group {
+    color: var(--sc-dark-text-secondary) !important;
+}
+
+/* Иконки и визуальные элементы */
+.sc-dark-mode .sc-button-icon:before,
+.sc-dark-mode .sc-icon {
+    color: var(--sc-dark-text) !important;
+}
+
+/* Списки и разделители */
+.sc-dark-mode .listenEngagement,
+.sc-dark-mode .divider {
+    background-color: var(--sc-dark-surface) !important;
+    border-color: var(--sc-dark-border) !important;
+}
+
+/* Анимации */
+.sc-dark-mode .sc-button,
+.sc-dark-mode a,
+.sc-dark-mode .playControls__timeline {
+    transition: all 0.2s ease-in-out !important;
+}
+
+/* Волна трека */
+.sc-dark-mode .waveform__layer {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sc-dark-mode .waveform__layer--active {
+    background-color: var(--sc-dark-primary);
+}
+
+/* Верхний баннер */
+.sc-dark-mode .announcement {
+    background-color: var(--sc-dark-surface) !important;
+    color: var(--sc-dark-text) !important;
+    border-color: var(--sc-dark-border) !important;
+}
+
+/* Боковые панели и виджеты */
+.sc-dark-mode .sidebarModule__inner,
+.sc-dark-mode .trackItem,
+.sc-dark-mode .chartTrack,
+.sc-dark-mode .relatedList,
+.sc-dark-mode .sidebarInfoBox,
+.sc-dark-mode .g-tabs-link,
+.sc-dark-mode .activities-list {
+    background-color: var(--sc-dark-surface) !important;
+    color: var(--sc-dark-text) !important;
+    border-color: var(--sc-dark-border) !important;
+}
+
+/* Плеер и контролы внизу */
+.sc-dark-mode .playControls__bg,
+.sc-dark-mode .playbackSoundBadge,
+.sc-dark-mode .playbackTimeline__progressBackground,
+.sc-dark-mode .volume__sliderBackground {
+    background-color: var(--sc-dark-surface) !important;
+}
+
+/* Панель Artist Tools */
+.sc-dark-mode .toolsMenu,
+.sc-dark-mode .toolsMenu__list,
+.sc-dark-mode .toolsMenu__item {
+    background-color: var(--sc-dark-surface) !important;
+    color: var(--sc-dark-text) !important;
+    border-color: var(--sc-dark-border) !important;
+}
+
+.sc-dark-mode .toolsMenu__button {
+    background-color: var(--sc-dark-surface-light) !important;
+    color: var(--sc-dark-text) !important;
+    border: 1px solid var(--sc-dark-border) !important;
+}
+
+.sc-dark-mode .toolsMenu__button:hover {
+    background-color: var(--sc-dark-primary) !important;
+}
+
+/* Списки треков и плейлисты */
+.sc-dark-mode .trackList__item,
+.sc-dark-mode .trackList__content,
+.sc-dark-mode .trackItem__content {
+    background-color: var(--sc-dark-surface) !important;
+    color: var(--sc-dark-text) !important;
+    border-color: var(--sc-dark-border) !important;
+}
+
+/* Дополнительные элементы интерфейса */
+.sc-dark-mode .sc-border-light-bottom,
+.sc-dark-mode .sc-border-light-top {
+    border-color: var(--sc-dark-border) !important;
+}
+
+/* Фиксим цвета иконок */
+.sc-dark-mode .sc-button-icon,
+.sc-dark-mode .playbackSoundBadge__avatar {
+    background-color: transparent !important;
+}
+
+/* Фиксим оставшиеся светлые элементы */
+.sc-dark-mode .notificationBadge,
+.sc-dark-mode .uploadHeader,
+.sc-dark-mode .listenHistory,
+.sc-dark-mode .streamSidebar,
+.sc-dark-mode .stream__header,
+.sc-dark-mode .g-notification,
+.sc-dark-mode .userNetworkTop,
+.sc-dark-mode .userNetwork,
+.sc-dark-mode .userInfoBar,
+.sc-dark-mode .chartTrack__details,
+.sc-dark-mode .chartTrack__bottom,
+.sc-dark-mode .fullHero {
+    background-color: var(--sc-dark-surface) !important;
+    color: var(--sc-dark-text) !important;
+    border-color: var(--sc-dark-border) !important;
+}
+
+/* Фиксим белый фон в плеере */
+.sc-dark-mode .playbackTimeline,
+.sc-dark-mode .volume,
+.sc-dark-mode .playbackTimeline__duration,
+.sc-dark-mode .playbackTimeline__timePassed,
+.sc-dark-mode .playbackSoundBadge__titleContextContainer {
+    background-color: var(--sc-dark-surface) !important;
+    color: var(--sc-dark-text) !important;
+}
+
+/* Фиксим белые элементы в верхнем баннере */
+.sc-dark-mode .announcement,
+.sc-dark-mode .announcementBanner,
+.sc-dark-mode .featureAnnouncement {
+    background-color: var(--sc-dark-surface) !important;
+    color: var(--sc-dark-text) !important;
+}
+
+/* Фиксим белый фон в Artist Tools */
+.sc-dark-mode .dropbar,
+.sc-dark-mode .dropbar-menu,
+.sc-dark-mode .dropbar-content,
+.sc-dark-mode .artistTools,
+.sc-dark-mode .toolsMenu__popup,
+.sc-dark-mode .toolsMenu__wrapper {
+    background-color: var(--sc-dark-surface) !important;
+    color: var(--sc-dark-text) !important;
+    border-color: var(--sc-dark-border) !important;
+}
+
+/* Фиксим белый фон в списках треков */
+.sc-dark-mode .trackList,
+.sc-dark-mode .trackList__list,
+.sc-dark-mode .trackList__content,
+.sc-dark-mode .trackItem__additional,
+.sc-dark-mode .trackItem__number,
+.sc-dark-mode .trackItem__date {
+    background-color: var(--sc-dark-surface) !important;
+    color: var(--sc-dark-text-secondary) !important;
+}
+
+/* Фиксим белый фон в комментариях */
+.sc-dark-mode .commentsList,
+.sc-dark-mode .commentItem,
+.sc-dark-mode .commentForm,
+.sc-dark-mode .commentPopover {
+    background-color: var(--sc-dark-surface) !important;
+    color: var(--sc-dark-text) !important;
+}
+
+/* Фиксим белый фон в попапах и модальных окнах */
+.sc-dark-mode .modal-content,
+.sc-dark-mode .dialog-content,
+.sc-dark-mode .dialogContent {
+    background-color: var(--sc-dark-surface) !important;
+    color: var(--sc-dark-text) !important;
+}
+
+/* Фиксим белый фон в меню */
+.sc-dark-mode .dropdown,
+.sc-dark-mode .dropdownContent,
+.sc-dark-mode .menu,
+.sc-dark-mode .menuItem {
+    background-color: var(--sc-dark-surface) !important;
+    color: var(--sc-dark-text) !important;
+    border-color: var(--sc-dark-border) !important;
+}
+
+/* Фиксим белый фон в поиске */
+.sc-dark-mode .searchTitle,
+.sc-dark-mode .searchResults,
+.sc-dark-mode .searchResultsHeader {
+    background-color: var(--sc-dark-surface) !important;
+    color: var(--sc-dark-text) !important;
+}
+
+/* Делаем более темный фон */
+:root {
+    --sc-dark-background: #0a0a0a;  /* Делаем основной фон темнее */
+    --sc-dark-surface: #1a1a1a;     /* Делаем поверхности темнее */
+    --sc-dark-surface-light: #2a2a2a; /* Делаем светлые поверхности темнее */
+}
+
+/* Фиксим прозрачность */
+.sc-dark-mode .g-opacity-transition {
+    background-color: var(--sc-dark-background) !important;
+}
+
+/* Фиксим градиенты */
+.sc-dark-mode .gradientBg,
+.sc-dark-mode .gradientBgLight {
+    background: var(--sc-dark-surface) !important;
+    background-image: none !important;
+} 

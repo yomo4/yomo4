@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 200px;
+      padding: 15px;
+      background-color: #121212;
+      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .container {
+      text-align: center;
+    }
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+      margin: 10px 0;
+    }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #383838;
+      transition: .4s;
+      border-radius: 34px;
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: #ff5500;
+    }
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+    .title {
+      font-size: 16px;
+      margin: 0 0 15px 0;
+    }
+    .description {
+      font-size: 14px;
+      color: #b3b3b3;
+      margin: 15px 0 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">SoundCloud Dark Theme</h1>
+    <label class="switch">
+      <input type="checkbox" id="themeToggle">
+      <span class="slider"></span>
+    </label>
+    <p class="description">Включить темную тему</p>
+  </div>
+  <script src="scripts/popup.js"></script>
+</body>
+</html> 

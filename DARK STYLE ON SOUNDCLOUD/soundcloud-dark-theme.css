@@ -1,0 +1,73 @@
+/* Темная тема для SoundCloud */
+:root {
+    --sc-dark-background: #121212;
+    --sc-dark-surface: #282828;
+    --sc-dark-text: #ffffff;
+    --sc-dark-text-secondary: #b3b3b3;
+    --sc-dark-primary: #ff5500;
+    --sc-dark-border: #404040;
+}
+
+/* Основной фон */
+body {
+    background-color: var(--sc-dark-background) !important;
+    color: var(--sc-dark-text) !important;
+}
+
+/* Верхняя панель навигации */
+.header {
+    background-color: var(--sc-dark-surface) !important;
+    border-bottom: 1px solid var(--sc-dark-border) !important;
+}
+
+/* Плеер */
+.playControls {
+    background-color: var(--sc-dark-surface) !important;
+}
+
+/* Кнопки и элементы управления */
+.playControls__elements button,
+.playControls__timeline {
+    color: var(--sc-dark-text) !important;
+}
+
+/* Карточки треков */
+.sound__content {
+    background-color: var(--sc-dark-surface) !important;
+    border: 1px solid var(--sc-dark-border) !important;
+}
+
+/* Ссылки */
+a {
+    color: var(--sc-dark-text) !important;
+}
+
+a:hover {
+    color: var(--sc-dark-primary) !important;
+}
+
+/* Кнопка воспроизведения */
+.playButton {
+    background-color: var(--sc-dark-primary) !important;
+}
+
+/* Полоса прогресса */
+.progressBar__elapsed {
+    background-color: var(--sc-dark-primary) !important;
+}
+
+/* Боковая панель */
+.sidebarContent {
+    background-color: var(--sc-dark-surface) !important;
+    border-right: 1px solid var(--sc-dark-border) !important;
+}
+
+/* Поле поиска */
+.headerSearch {
+    background-color: var(--sc-dark-background) !important;
+    border: 1px solid var(--sc-dark-border) !important;
+}
+
+@-moz-document domain("m.soundcloud.com") {
+    // ... существующий код ...
+} 
